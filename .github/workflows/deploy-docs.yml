@@ -7,10 +7,11 @@ on:
         description: Enter git refname to build (e.g., 5.7.x).
         required: false
   push:
-    branches: docs-build
+    branches: docs-build*
+permissions:
+  contents: write
 jobs:
   build:
-    if: github.repository_owner == 'spring-projects'
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
@@ -34,16 +35,6 @@ jobs:
       run: |
         ./mvnw antora
     - name: Publish Docs
-      uses: spring-io/spring-doc-actions/rsync-antora-reference@v0.0.11
+      uses: JamesIves/github-pages-deploy-action@v4
       with:
-        docs-username: ${{ secrets.DOCS_USERNAME }}
-        docs-host: ${{ secrets.DOCS_HOST }}
-        docs-ssh-key: ${{ secrets.DOCS_SSH_KEY }}
-        docs-ssh-host-key: ${{ secrets.DOCS_SSH_HOST_KEY }}
-        site-path: target/antora/site
-    - name: Bust Cloudflare Cache
-      uses: spring-io/spring-doc-actions/bust-cloudflare-antora-cache@v0.0.11
-      with:
-        context-root: spring-modulith
-        cloudflare-zone-id: ${{ secrets.CLOUDFLARE_ZONE_ID }}
-        cloudflare-cache-token: ${{ secrets.CLOUDFLARE_CACHE_TOKEN }}
+        folder: target/antora/site
