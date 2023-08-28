@@ -23,7 +23,6 @@ content:
     start_path: src/docs/antora
 asciidoc:
   attributes:
-    page-stackoverflow-url: https://stackoverflow.com/tags/spring-modulith
     page-pagination: ''
     hide-uri-scheme: '@'
     tabs-sync-option: '@'
