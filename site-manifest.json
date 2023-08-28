@@ -1,6 +1,6 @@
 {
   "$id": "https://schemas.antora.org/site-manifest/1-0-0/draft-01",
-  "generated": "2023-08-28T13:55:26.313Z",
+  "generated": "2023-08-28T21:05:06.353Z",
   "url": "https://docs.spring.io/spring-modulith/reference",
   "components": {
     "modulith": {
