@@ -1,0 +1,70 @@
+{
+  "$id": "https://schemas.antora.org/site-manifest/1-0-0/draft-01",
+  "generated": "2023-08-28T13:55:26.313Z",
+  "url": "https://docs.spring.io/spring-modulith/reference",
+  "components": {
+    "modulith": {
+      "title": "Spring Modulith",
+      "latest": "1.1.0",
+      "versions": {
+        "1.1.0": {
+          "prerelease": true,
+          "displayVersion": "1.1.0-SNAPSHOT",
+          "url": "/index.html",
+          "pages": [
+            {
+              "path": "index.adoc",
+              "url": "/index.html",
+              "title": "Spring Modulith"
+            },
+            {
+              "path": "appendix.adoc",
+              "url": "/appendix.html",
+              "title": "Appendix"
+            },
+            {
+              "path": "documentation.adoc",
+              "url": "/documentation.html",
+              "title": "Documenting Application Modules"
+            },
+            {
+              "path": "events.adoc",
+              "url": "/events.html",
+              "title": "Working with Application Events"
+            },
+            {
+              "path": "fundamentals.adoc",
+              "url": "/fundamentals.html",
+              "title": "Fundamentals"
+            },
+            {
+              "path": "moments.adoc",
+              "url": "/moments.html",
+              "title": "Moments&#8201;&#8212;&#8201;a Passage of Time Events API"
+            },
+            {
+              "path": "observability.adoc",
+              "url": "/observability.html",
+              "title": "Production-ready Features"
+            },
+            {
+              "path": "runtime.adoc",
+              "url": "/runtime.html",
+              "title": "Spring Modulith Runtime Support"
+            },
+            {
+              "path": "testing.adoc",
+              "url": "/testing.html",
+              "title": "Integration Testing Application Modules"
+            },
+            {
+              "path": "verification.adoc",
+              "url": "/verification.html",
+              "title": "Verifying Application Module Structure"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
